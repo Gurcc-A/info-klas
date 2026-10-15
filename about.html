@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Про мене — Кабінет інформатики</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">&lt;/&gt;</span><span>Кабінет інформатики</span></a>
+    <button class="theme" id="theme" type="button" aria-label="Змінити тему оформлення"></button>
+    <nav class="tabs" id="tabs" aria-label="Розділи сайту">
+      <a href="index.html">Головна</a>
+      <a href="students.html">Учням</a>
+      <a href="parents.html">Батькам</a>
+      <a href="materials.html">Навчальні матеріали</a>
+      <a href="about.html" aria-current="page">Про мене</a>
+      <a href="help.html">Допомога</a>
+      <a href="fun.html">Цікавинки</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about" class="page" aria-labelledby="h-about">
+    <div class="head">
+      <span class="eyebrow">Знайомство</span>
+      <h2 id="h-about">Про мене</h2>
+    </div>
+    <div class="about">
+      <aside class="mono-card">
+        <div class="initials" id="initials" aria-hidden="true"></div>
+        <dl class="facts">
+          <dt>Ім’я</dt><dd data-fill="name"></dd>
+          <dt>Посада</dt><dd>Вчитель інформатики</dd>
+          <dt>Школа</dt><dd data-fill="school"></dd>
+          <dt>Класи</dt><dd>5–12</dd>
+          <dt>Пошта</dt><dd data-fill="email"></dd>
+        </dl>
+      </aside>
+      <div class="prose">
+        <p>Я вірю, що інформатика навчає насамперед мислити: розбивати велике завдання на прості кроки, шукати помилки й не боятися пробувати знову. Навички роботи з програмами швидко змінюються, а такий спосіб думання лишається з людиною надовго.</p>
+        <p>На моїх уроках багато практики. Діти створюють власні програми, презентації, таблиці й сайти, а помилки розглядаємо як частину процесу, а не привід для переживань.</p>
+        <div class="block">
+          <h3>Мої принципи</h3>
+          <ul class="list">
+            <li><b>Розуміти, а не завчати.</b> Кожну тему починаємо із запитання «навіщо це потрібно».</li>
+            <li><b>Безпека понад усе.</b> Цифрова гігієна і критичне мислення вивчаються разом із програмами.</li>
+            <li><b>Кожен у своєму темпі.</b> Для тих, хто поспішає, є додаткові завдання, а для тих, кому треба більше часу, є підтримка.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> <span data-fill="name"></span>, <span data-fill="school"></span></span>
+    <span>Сайт вчителя інформатики</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
