@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Про мене — Кабінет інформатики</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">&lt;/&gt;</span><span>Кабінет інформатики</span></a>
+    <button class="theme" id="theme" type="button" aria-label="Змінити тему оформлення"></button>
+    <nav class="tabs" id="tabs" aria-label="Розділи сайту">
+      <a href="index.html">Головна</a>
+      <a href="students.html">Учням</a>
+      <a href="parents.html">Батькам</a>
+      <a href="materials.html">Навчальні матеріали</a>
+      <a href="about.html" aria-current="page">Про мене</a>
+      <a href="help.html">Допомога</a>
+      <a href="fun.html">Цікавинки</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about" class="page" aria-labelledby="h-about">
+    <div class="head">
+      <span class="eyebrow">Знайомство</span>
+      <h2 id="h-about">Про мене</h2>
+    </div>
+    <div class="about">
+      <aside class="mono-card">
+        <div class="initials" id="initials" aria-hidden="true"></div>
+        <dl class="facts">
+          <dt>Ім’я</dt><dd data-fill="name"></dd>
+          <dt>Посада</dt><dd>Вчитель інформатики</dd>
+          <dt>Школа</dt><dd data-fill="school"></dd>
+          <dt>Класи</dt><dd>5–12</dd>
+          <dt>Пошта</dt><dd data-fill="email"></dd>
+        </dl>
+      </aside>
+      <div class="prose">
+        <p>Привіт! Мене звати Олександра, я студентка третього курсу. В інформатику й освіту я потрапила, можна сказати, випадково, але швидко зрозуміла, що мені тут справді подобається.</p>
+        <p>Найбільше мене захоплюють сайти й веб-дизайн: із чистого аркуша створити сторінку, яку приємно відкрити й легко зрозуміти. Саме тому я особливо пишаюся власними проєктами, і цей сайт один із них. Мій головний козир — уміння пояснювати складне просто, тож із людьми будь-якого віку мені цікаво розмовляти, якщо тема цікава.</p>
+        <p>Коли я не за екраном, то люблю спорт і активний відпочинок, а ввечері — гарну книжку, фільм чи серіал.</p>
+      </div>
+    </div>
+
+    <div class="block certs-block">
+      <h3 id="h-certs">Сертифікати</h3>
+      <p class="lead">Курси, тренінги й конференції, у яких я брала участь. Натисніть на сертифікат, щоб відкрити його на весь розмір.</p>
+      <div class="certs" id="certs" role="region" aria-roledescription="карусель" aria-labelledby="h-certs">
+        <div class="cslides">
+          <figure class="cslide">
+            <a href="sr/cert-1.jpg" target="_blank" rel="noopener" title="Відкрити на весь розмір"><img src="sr/cert-1.jpg" width="1280" height="720" alt="Сертифікат: День академічної доброчесності — 2024"></a>
+            <figcaption><h4>День академічної доброчесності — 2024</h4><p>Вінницький державний педагогічний університет імені Михайла Коцюбинського</p><div class="cmeta"><span class="pill">24.10.2024</span><span class="pill alt">6 год · 0,2 кредити ЄКТС</span></div></figcaption>
+          </figure>
+          <figure class="cslide">
+            <a href="sr/cert-2.jpg" target="_blank" rel="noopener" title="Відкрити на весь розмір"><img src="sr/cert-2.jpg" width="1600" height="1130" alt="Сертифікат: Управління якістю освіти в школі" loading="lazy"></a>
+            <figcaption><h4>Управління якістю освіти в школі</h4><p>Prometheus, онлайн-курс Державної служби якості освіти України</p><div class="cmeta"><span class="pill">20.11.2024</span><span class="pill alt">30 год · 1 кредит ЄКТС</span></div></figcaption>
+          </figure>
+          <figure class="cslide">
+            <a href="sr/cert-3.jpg" target="_blank" rel="noopener" title="Відкрити на весь розмір"><img src="sr/cert-3.jpg" width="1600" height="1130" alt="Сертифікат: Впровадження інновацій в школах" loading="lazy"></a>
+            <figcaption><h4>Впровадження інновацій в школах</h4><p>Prometheus, онлайн-курс</p><div class="cmeta"><span class="pill">22.11.2024</span><span class="pill alt">60 год · 2 кредити ЄКТС</span></div></figcaption>
+          </figure>
+          <figure class="cslide">
+            <a href="sr/cert-4.jpg" target="_blank" rel="noopener" title="Відкрити на весь розмір"><img src="sr/cert-4.jpg" width="1600" height="1136" alt="Сертифікат: Освіта в долоні: Google for Education на мобільному пристрої як інструмент цифрової трансформації" loading="lazy"></a>
+            <figcaption><h4>Освіта в долоні: Google for Education на мобільному пристрої як інструмент цифрової трансформації</h4><p>Академія цифрового розвитку, тренінг</p><div class="cmeta"><span class="pill">02.06.2025</span><span class="pill alt">2 академічні години · 0,07 кредиту ECTS</span></div></figcaption>
+          </figure>
+          <figure class="cslide">
+            <a href="sr/cert-5.jpg" target="_blank" rel="noopener" title="Відкрити на весь розмір"><img src="sr/cert-5.jpg" width="1600" height="1128" alt="Сертифікат: XV Міжнародна науково-практична конференція «Current Trends in the Development of Existing Research and Theories»" loading="lazy"></a>
+            <figcaption><h4>XV Міжнародна науково-практична конференція «Current Trends in the Development of Existing Research and Theories»</h4><p>International Science Group, Ліон, Франція</p><div class="cmeta"><span class="pill">09–12.12.2025</span><span class="pill alt">24 год · 0,8 кредиту ECTS</span></div></figcaption>
+          </figure>
+          <figure class="cslide">
+            <a href="sr/cert-6.jpg" target="_blank" rel="noopener" title="Відкрити на весь розмір"><img src="sr/cert-6.jpg" width="1600" height="1132" alt="Сертифікат: І Всеукраїнська студентська науково-практична конференція «Освіта в умовах цифрової трансформації: сучасний стан та перспективи розвитку»" loading="lazy"></a>
+            <figcaption><h4>І Всеукраїнська студентська науково-практична конференція «Освіта в умовах цифрової трансформації: сучасний стан та перспективи розвитку»</h4><p>Кам’янець-Подільський державний інститут</p><div class="cmeta"><span class="pill">26.02.2026</span><span class="pill alt">Участь у конференції</span></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> <span data-fill="name"></span>, <span data-fill="school"></span></span>
+    <span>Сайт вчителя інформатики</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

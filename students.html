@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учням — Кабінет інформатики</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">&lt;/&gt;</span><span>Кабінет інформатики</span></a>
+    <button class="theme" id="theme" type="button" aria-label="Змінити тему оформлення"></button>
+    <nav class="tabs" id="tabs" aria-label="Розділи сайту">
+      <a href="index.html">Головна</a>
+      <a href="students.html" aria-current="page">Учням</a>
+      <a href="parents.html">Батькам</a>
+      <a href="materials.html">Навчальні матеріали</a>
+      <a href="about.html">Про мене</a>
+      <a href="help.html">Допомога</a>
+      <a href="fun.html">Цікавинки</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="students" class="page" aria-labelledby="h-students">
+    <div class="head">
+      <span class="eyebrow">Для учнів 5–11 класів</span>
+      <h2 id="h-students">Учням</h2>
+      <p class="lead">Обери свій клас і подивись, які теми чекають протягом року. Остаточний порядок тем залежить від календарного планування, тож я нагадуватиму про зміни на уроках.</p>
+    </div>
+
+    <div class="block">
+      <h3>Орієнтовний план року</h3>
+      <div class="chips" id="grades" role="group" aria-label="Клас"></div>
+      <ol class="topics" id="topics"></ol>
+    </div>
+
+    <div class="split">
+      <div class="col block">
+        <h3>Правила в комп’ютерному класі</h3>
+        <ul class="list rules">
+          <li><b>Заходь спокійно.</b> Залишай сумку біля входу, їжа й напої лишаються за дверима.</li>
+          <li><b>Не чіпай проводи й розетки.</b> Якщо щось блимає або пахне, одразу скажи вчителеві.</li>
+          <li><b>Працюй під своїм обліковим записом.</b> Пароль нікому не повідомляй.</li>
+          <li><b>Роби перерви.</b> Очі відпочивають під час гімнастики, яку ми проводимо на уроці.</li>
+          <li><b>Зберігай роботу.</b> Підписуй файли своїм прізвищем і класом, зберігай у вказану папку.</li>
+        </ul>
+      </div>
+      <div class="col block">
+        <h3>Як виставляються оцінки</h3>
+        <p>Оцінки ставляться за 12-бальною шкалою. Їх складають кілька видів робіт:</p>
+        <ul class="list">
+          <li><b>Практичні роботи.</b> Результат на комп’ютері й пояснення, як ти до нього дійшов.</li>
+          <li><b>Тести й короткі опитування.</b> Перевіряють розуміння теми.</li>
+          <li><b>Проєкти.</b> Індивідуальні чи в парі, з коротким захистом.</li>
+          <li><b>Робота на уроці.</b> Допомога однокласникам, активна участь, акуратність.</li>
+        </ul>
+        <p class="note">Пропустив урок? Матеріали є в розділі «Навчальні матеріали», а питання можна поставити на наступному уроці або на консультації.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Корисні сервіси для навчання</h3>
+      <div class="grid">
+        <a class="card tool" href="https://scratch.mit.edu/" target="_blank" rel="noopener"><span class="host">scratch.mit.edu</span><h4>Scratch</h4><p>Візуальне програмування блоками. Добре підходить для перших кроків.</p></a>
+        <a class="card tool" href="https://hourofcode.com/" target="_blank" rel="noopener"><span class="host">hourofcode.com</span><h4>Година коду</h4><p>Короткі ігрові завдання, які можна пройти за один вечір.</p></a>
+        <a class="card tool" href="https://www.python.org/" target="_blank" rel="noopener"><span class="host">python.org</span><h4>Python</h4><p>Офіційний сайт мови: завантаження, документація й приклади.</p></a>
+        <a class="card tool" href="https://www.typingclub.com/" target="_blank" rel="noopener"><span class="host">typingclub.com</span><h4>Клавіатурний тренажер</h4><p>Вчимося друкувати наосліп. Достатньо по 10 хвилин щодня.</p></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> <span data-fill="name"></span>, <span data-fill="school"></span></span>
+    <span>Сайт вчителя інформатики</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

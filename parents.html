@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Батькам — Кабінет інформатики</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">&lt;/&gt;</span><span>Кабінет інформатики</span></a>
+    <button class="theme" id="theme" type="button" aria-label="Змінити тему оформлення"></button>
+    <nav class="tabs" id="tabs" aria-label="Розділи сайту">
+      <a href="index.html">Головна</a>
+      <a href="students.html">Учням</a>
+      <a href="parents.html" aria-current="page">Батькам</a>
+      <a href="materials.html">Навчальні матеріали</a>
+      <a href="about.html">Про мене</a>
+      <a href="help.html">Допомога</a>
+      <a href="fun.html">Цікавинки</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="parents" class="page" aria-labelledby="h-parents">
+    <div class="head">
+      <span class="eyebrow">Для батьків і опікунів</span>
+      <h2 id="h-parents">Батькам</h2>
+      <p class="lead">Інформатика не вимагає потужного комп’ютера вдома. Набагато важливіше, щоб дитина вміла безпечно користуватися технологіями та не боялася питати.</p>
+    </div>
+
+    <div class="split">
+      <div class="col block">
+        <h3>Як допомогти вдома</h3>
+        <ul class="list">
+          <li><b>Попросіть показати.</b> Нехай дитина розповість, що вона зробила на уроці. Пояснюючи, вона краще розуміє.</li>
+          <li><b>Домовтеся про режим.</b> Чіткі правила щодо часу за екраном працюють краще, ніж заборони в моменті.</li>
+          <li><b>Заохочуйте творення.</b> Проєкт, гра в Scratch чи таблиця витрат на кишенькові гроші цінніші за годину відео.</li>
+          <li><b>Не робіть за дитину.</b> Підкажіть, де шукати відповідь, але лишіть пошук їй.</li>
+        </ul>
+      </div>
+      <div class="col block">
+        <h3>Безпека дитини в інтернеті</h3>
+        <ul class="list">
+          <li>Разом налаштуйте приватність у соцмережах та іграх.</li>
+          <li>Поясніть, що не можна називати незнайомцям адресу, школу й паролі.</li>
+          <li>Домовтеся, що дитина розповість вам, якщо щось налякало або здалося дивним, і ви не будете сваритися.</li>
+          <li>Користуйтеся батьківським контролем, але не замінюйте ним розмову.</li>
+          <li>Вчіть перевіряти джерела й не переходити за підозрілими посиланнями.</li>
+        </ul>
+        <p class="note">На уроках ми дотримуємося санітарних норм щодо роботи за комп’ютером, робимо перерви й гімнастику для очей.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Часті запитання</h3>
+      <div>
+        <details><summary>Де дізнатися оцінки дитини?</summary><div class="ans">Поточні й підсумкові оцінки відображаються в шкільному журналі. Якщо щось незрозуміло, напишіть мені, і я поясню, за що виставлена оцінка та як її можна покращити.</div></details>
+        <details><summary>Дитина пропустила урок. Що робити?</summary><div class="ans">Тему й завдання можна знайти в розділі «Навчальні матеріали». Практичні роботи дитина може виконати на наступному уроці або на консультації.</div></details>
+        <details><summary>Чи потрібен вдома комп’ютер?</summary><div class="ans">Ні, всі практичні роботи ми виконуємо в кабінеті. Домашні завдання здебільшого теоретичні або короткі. Якщо комп’ютера немає, повідомте мене, і ми знайдемо рішення.</div></details>
+        <details><summary>Як і коли можна зі мною зв’язатися?</summary><div class="ans">Найзручніше написати на електронну пошту або прийти на консультацію. Час консультацій і контакти вказано нижче.</div></details>
+        <details><summary>Що робити, якщо дитина забагато сидить за екраном?</summary><div class="ans">Почніть із розмови, а не із заборони. Разом складіть розклад, у якому є час на навчання, відпочинок і живе спілкування, і домовтеся, що ви обидва його дотримуєтеся.</div></details>
+      </div>
+    </div>
+
+    <div class="card t-sage">
+      <h4>Консультації для батьків</h4>
+      <p data-fill="consult"></p>
+      <p>Пошта: <span class="mono" data-fill="email"></span></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> <span data-fill="name"></span>, <span data-fill="school"></span></span>
+    <span>Сайт вчителя інформатики</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
